@@ -2,7 +2,7 @@
   "name": "nimiq-snake",
   "version": "1.0.0",
   "main": "dist/index.js",
-  "repository": "https://github.com/marvinschopf/playnimiq",
+  "repository": "https://github.com/marvinschopf/playnimiq/tree/main/games/snake",
   "author": "Marvin Schopf",
   "license": "AGPL-3.0-or-later",
   "private": true
