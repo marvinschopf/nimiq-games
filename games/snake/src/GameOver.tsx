@@ -1,8 +1,8 @@
 import { Component, h } from "preact";
 
 type GameOverProps = {
-	width: number;
-	height: number;
+	width: number | string;
+	height: number | string;
 	newHighScore: boolean;
 	highScore: number;
 	score: number;
@@ -16,10 +16,21 @@ export default class GameOver extends Component<GameOverProps> {
 				style={{
 					width: this.props.width,
 					height: this.props.height,
-					borderWidth: this.props.width / 50,
+					borderWidth:
+						typeof this.props.width == "number"
+							? this.props.width / 50
+							: null,
 				}}
 			>
-				<div id="GameOver" style={{ fontSize: this.props.width / 15 }}>
+				<div
+					id="GameOver"
+					style={{
+						fontSize:
+							typeof this.props.width == "number"
+								? this.props.width / 15
+								: null,
+					}}
+				>
 					<div id="GameOverText">GAME OVER</div>
 					<div>Your score: {this.props.score}</div>
 					<div>

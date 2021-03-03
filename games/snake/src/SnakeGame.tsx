@@ -9,6 +9,8 @@ type SnakeGameProps = {
 	appleColor?: string;
 	startSnakeSize?: number;
 	percentageWidth?: number;
+	fixedWidth?: string;
+	fixedHeight?: string;
 };
 
 type SnakeGameState = {
@@ -440,8 +442,16 @@ export default class SnakeGame extends Component<
 		if (this.state.isGameOver) {
 			return (
 				<GameOver
-					width={this.state.width}
-					height={this.state.height}
+					width={
+						this.props.fixedWidth
+							? this.props.fixedWidth
+							: this.state.width
+					}
+					height={
+						this.props.fixedHeight
+							? this.props.fixedHeight
+							: this.state.height
+					}
 					highScore={this.state.highScore}
 					newHighScore={this.state.newHighScore}
 					score={this.state.score}
@@ -453,8 +463,12 @@ export default class SnakeGame extends Component<
 			<div
 				id="GameBoard"
 				style={{
-					width: this.state.width,
-					height: this.state.height,
+					width: this.props.fixedWidth
+						? this.props.fixedWidth
+						: this.state.width,
+					height: this.props.fixedHeight
+						? this.props.fixedHeight
+						: this.state.height,
 					borderWidth: this.state.width / 50,
 				}}
 			>
