@@ -44,6 +44,8 @@ export default class SnakeGame extends Component<
 	constructor(props: SnakeGameProps) {
 		super(props);
 
+		this.handleKeyDown = this.handleKeyDown.bind(this);
+
 		this.state = {
 			width: 0,
 			height: 0,
