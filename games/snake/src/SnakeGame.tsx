@@ -62,7 +62,10 @@ export default class SnakeGame extends Component<
 			snakeColor: this.props.snakeColor || this.getRandomColor(),
 			appleColor: this.props.appleColor || this.getRandomColor(),
 			score: 0,
-			highScore: Number(localStorage.getItem("snakeHighScore")) || 0,
+			highScore:
+				typeof window !== "undefined"
+					? Number(localStorage.getItem("snakeHighScore")) || 0
+					: 0,
 			newHighScore: false,
 		};
 	}
@@ -272,7 +275,11 @@ export default class SnakeGame extends Component<
 			// increment high score if needed
 			if (this.state.score === highScore) {
 				highScore++;
-				localStorage.setItem("snakeHighScore", highScore.toString());
+				if (typeof window !== "undefined")
+					localStorage.setItem(
+						"snakeHighScore",
+						highScore.toString()
+					);
 				newHighScore = true;
 			}
 
