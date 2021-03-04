@@ -4,6 +4,10 @@ import SnakeGame from "./SnakeGame";
 
 export default class App extends Component {
 	render() {
-		return <SnakeGame percentageWidth={60} />;
+		return (
+			<div style={{ fontFamily: "Muli" }}>
+				<SnakeGame percentageWidth={60} />
+			</div>
+		);
 	}
 }
