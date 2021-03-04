@@ -949,6 +949,11 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
+"@hcaptcha/react-hcaptcha@0.3.4":
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/@hcaptcha/react-hcaptcha/-/react-hcaptcha-0.3.4.tgz#0c22bc32582a82650108c0c2f3c1220df39f1b82"
+  integrity sha512-yY1Sj0I1Hg8VUWasNWqJ+8iEMgNU23RHKTr+DYhp1ta3pm2j0V8Lfv1eX6yeix681wWTlOXcWA2BHBJBDHfdWw==
+
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@istanbuljs/load-nyc-config/-/load-nyc-config-1.1.0.tgz#fd3db1d59ecf7cf121e80650bb86712f9b55eced"
@@ -1321,6 +1326,13 @@
   integrity sha512-anKkLmZZ+xm4p8JWBf4hElkM4XR+EZeA2M9BAkkTldmcyDY4mbdIJnRghDJH3Ov5ooY7/UAoENtmdMSkaAd7Cw==
   dependencies:
     "@types/node" "*"
+
+"@types/hcaptcha__react-hcaptcha@0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@types/hcaptcha__react-hcaptcha/-/hcaptcha__react-hcaptcha-0.1.4.tgz#145cab4f0ac29fe8925dc98ab16cf2dffacad7d5"
+  integrity sha512-eqEIBR7yn4Y1fRtxPnFlEP8SAHwX762Z27s/ifd5wfJicviz6HynF8gHCgUPPtfYlaQFHa/A0NkwBA5YNmNCmQ==
+  dependencies:
+    "@types/react" "*"
 
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0", "@types/istanbul-lib-coverage@^2.0.1":
   version "2.0.3"
@@ -3782,6 +3794,11 @@ dot-prop@^5.2.0:
   integrity sha512-QM8q3zDe58hqUqjraQOmzZ1LIH9SWQJTlEKCH4kJ2oQvLZk7RbQXvtDM2XEq3fwkV9CCvvH4LA0AV+ogFsBM2Q==
   dependencies:
     is-obj "^2.0.0"
+
+dotenv@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-4.0.0.tgz#864ef1379aced55ce6f95debecdce179f7a0cd1d"
+  integrity sha1-hk7xN5rO1Vzm+V3r7NzhefegzR0=
 
 duplexer3@^0.1.4:
   version "0.1.4"
@@ -8146,6 +8163,14 @@ postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.27, postcss@^7.0.3
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
+preact-cli-plugin-env-vars@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/preact-cli-plugin-env-vars/-/preact-cli-plugin-env-vars-1.2.1.tgz#ba8b20966746c3f7dbcbd99a8ae49328111a3f19"
+  integrity sha512-2JANOlTwdQjZPLT4LwzChcVSIQwLS1it4rgyR0QgMJ7GPtffmeHbtD3RGg5qSTJAAFvxxw7E/88ll24wOwu1WQ==
+  dependencies:
+    dotenv "^4.0.0"
+    resolve-env-vars "^1.0.0"
+
 preact-cli@^3.0.0:
   version "3.0.5"
   resolved "https://registry.yarnpkg.com/preact-cli/-/preact-cli-3.0.5.tgz#e7bd78d3fe58cd375b61bf0348621e19dfa16705"
@@ -8819,6 +8844,11 @@ resolve-cwd@^3.0.0:
   integrity sha512-OrZaX2Mb+rJCpH/6CpSqt9xFVpN++x01XnN2ie9g6P5/3xelLAkXWVADpdz1IHD/KFfEXyE6V0U01OQ3UO2rEg==
   dependencies:
     resolve-from "^5.0.0"
+
+resolve-env-vars@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/resolve-env-vars/-/resolve-env-vars-1.0.0.tgz#ddce53ceee7590dfbab445f8b43ec6c0159200dc"
+  integrity sha512-L5i1zTJC2QaVKiYTofGuyUJAYMMSlrZCJfSWMVfa+F9oV+AJm3JAD8mVIPS4hPC+IKCFZRDHGSgYI6NW+TnK7A==
 
 resolve-from@^3.0.0:
   version "3.0.0"

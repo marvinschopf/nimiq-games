@@ -1,4 +1,5 @@
 import { Component, h } from "preact";
+import HCaptcha from "@hcaptcha/react-hcaptcha";
 
 type GameOverProps = {
 	width: number | string;
@@ -32,6 +33,13 @@ export default class GameOver extends Component<GameOverProps> {
 					}}
 				>
 					<div id="GameOverText">GAME OVER</div>
+					<HCaptcha
+						sitekey={
+							process.env.PREACT_APP_HCAPTCHA_SITE_KEY
+								? process.env.PREACT_APP_HCAPTCHA_SITE_KEY
+								: ""
+						}
+					/>
 					<div>Your score: {this.props.score}</div>
 					<div>
 						{this.props.newHighScore ? "New local " : "Local "}high
